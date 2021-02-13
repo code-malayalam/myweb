@@ -19,10 +19,14 @@ const doMatch = (a, b) => {
 const template = (item) => {
     const title = item.snippet.title;
     const id = item.id.videoId;
+    const thumb = item.snippet.thumbnails.default.url;
     return `
 <div class="box">
 <div class="box-title">
-    ${title}
+    <span>
+    <a href="http://www.youtube.com/watch?v=${id}}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="image" width="72" height="54"></a>
+    </span>
+    <span>${title}</span>
 </div>
 <div class="box-link">
     <a href="http://www.youtube.com/watch?v=${id}}" target="_blank" rel="noopener noreferrer">See in Youtube</a>
@@ -70,9 +74,9 @@ const main = () => {
             const content = document.body
             content.classList.add('hide-loading');
 
-            fillDom(gitArr.reverse(), 'git');
-            fillDom(othersArr.reverse(), 'others');
-            fillDom(jsArr.reverse(), 'js');
+            fillDom(gitArr, 'git');
+            fillDom(othersArr, 'others');
+            fillDom(jsArr, 'js');
             
 
         })
