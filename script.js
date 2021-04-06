@@ -74,6 +74,7 @@ const main = () => {
             const content = document.body
             content.classList.add('hide-loading');
 
+            fillDom(reactArr, 'react');
             fillDom(gitArr, 'git');
             fillDom(othersArr, 'others');
             fillDom(jsArr, 'js');
