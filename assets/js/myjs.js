@@ -1,9 +1,27 @@
-/**
- * 
- * This is a script for codemalayalam.in.
- * This gets data from youtube
- */
 
+function template(item = {}) {
+    const title = item.snippet.title;
+    const id = item.id.videoId;
+    const img = item.snippet.thumbnails.high.url;
+    const description = item.snippet.description;
+    const url = `http://www.youtube.com/watch?v=${id}`;
+    return `
+<div class="col-4 col-6-medium col-12-small">
+    <section class="box video-box">
+        <a target="_blank" href="${url}" class="image featured"><img src="${img}" alt="" /></a>
+        <header>
+            <h3 class="video-title">${title}</h3>
+        </header>
+        <p class="video-description">${description}</p>
+        <footer>
+            <ul class="actions">
+                <li><a target="_blank" href="${url}" class="button alt">Watch on YouTube</a></li>
+            </ul>
+        </footer>
+    </section>
+</div>
+    `;
+}
 
 
 const initiateApi = () => {
@@ -14,25 +32,6 @@ const initiateApi = () => {
 
 const doMatch = (a, b) => {
     return a.toLowerCase().indexOf(b.toLowerCase()) !== -1;
-}
-
-const template = (item) => {
-    const title = item.snippet.title;
-    const id = item.id.videoId;
-    const thumb = item.snippet.thumbnails.default.url;
-    return `
-<div class="box">
-<div class="box-title">
-    <span>
-    <a href="http://www.youtube.com/watch?v=${id}}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="image" width="72" height="54"></a>
-    </span>
-    <span>${title}</span>
-</div>
-<div class="box-link">
-    <a href="http://www.youtube.com/watch?v=${id}}" target="_blank" rel="noopener noreferrer">See in Youtube</a>
-</div>
-</div>
-    `;
 }
 
 
