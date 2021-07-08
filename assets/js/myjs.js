@@ -13,11 +13,6 @@ function template(item = {}) {
             <h3 class="video-title">${title}</h3>
         </header>
         <p class="video-description">${description}</p>
-        <footer>
-            <ul class="actions">
-                <li><a target="_blank" href="${url}" class="button alt">Watch on YouTube</a></li>
-            </ul>
-        </footer>
     </section>
 </div>
     `;
