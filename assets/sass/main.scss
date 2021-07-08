@@ -173,7 +173,7 @@
 	}
 
 	a {
-		color: #d52349;
+		color: #2d5394;
 		text-decoration: underline;
 
 		&:hover {
@@ -426,7 +426,7 @@
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;
+		background: #2d5394;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -610,7 +610,7 @@
 			position: absolute;
 			left: 0;
 			top: 1.3em;
-			background-color: #d52349;
+			background-color: #2d5394;
 			height: 3.5em;
 			text-align: center;
 			color: #fff;
@@ -624,7 +624,7 @@
 				position: absolute;
 				bottom: 0;
 				right: -1.2em;
-				border-left: solid 1.25em #d52349;
+				border-left: solid 1.25em #2d5394;
 				border-top: solid 1.8em transparent;
 				border-bottom: solid 1.8em transparent;
 			}
@@ -771,7 +771,6 @@
 
 		&.brands {
 			&:before {
-				font-family: 'Font Awesome 5 Brands';
 			}
 		}
 
@@ -786,7 +785,7 @@
 		&.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #2d5394;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -805,7 +804,7 @@
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #2d5394;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
@@ -819,10 +818,10 @@
 			}
 
 			&.alt2 {
-				background-color: #827a7c;
+				background-color: #edaa9f;
 
 				&:after {
-					border-top-color: #827a7c;
+					border-top-color: #edaa9f;
 				}
 			}
 		}
@@ -888,7 +887,7 @@
 
 				&.current {
 					> a {
-						background: #d52349;
+						background: #2d5394;
 						color: #fff !important;
 						font-weight: 700;
 					}
@@ -970,7 +969,7 @@
 			}
 
 			p {
-				color: #d52349;
+				color: #2d5394;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
