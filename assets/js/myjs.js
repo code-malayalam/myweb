@@ -41,6 +41,7 @@ const main = () => {
             const jsArr = [];
             const gitArr = [];
             const reactArr = [];
+            const reduxArr = [];
             const othersArr = [];
             const filter = [];
 
@@ -49,6 +50,8 @@ const main = () => {
                 if(item.id.videoId) {
                     if(doMatch(item.snippet.title, '1.0')) {
                         filter.push(item);
+                    } else if (doMatch(item.snippet.title, 'Redux')) {
+                        reduxArr.push(item);
                     } else if(doMatch(item.snippet.title, 'JavaScript')) {
                         jsArr.push(item);
                     } else if (doMatch(item.snippet.title, 'Git')) {
@@ -72,6 +75,7 @@ const main = () => {
             fillDom(gitArr, 'git');
             fillDom(othersArr, 'others');
             fillDom(jsArr, 'js');
+            fillDom(reduxArr, 'redux');
             
 
         })
