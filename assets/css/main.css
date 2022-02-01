@@ -2072,13 +2072,36 @@ a.playlist {
 			.icon.featured.alt2 {
 				background-color: #edaa9f;
 			}
+			.icon.featured.router {
+				background-color: #beedb2;
+			}
+			.icon.featured.router::after {
+				border-top-color: #beedb2;
+			}
+			.icon.featured.redux {
+				background-color: #c4caf7;
+			}
+			.icon.featured.redux::after {
+				border-top-color: #c4caf7;
+			}
 
-				.icon.featured.alt2:after {
-					border-top-color: #edaa9f;
-				}
-				.icon.featured.alt2:before {
-					color: #ff3c23;
-				}
+			.icon.featured.white {
+				background-color: #fff;
+			}
+			.icon.featured.white::after {
+				border-top-color: #fff;
+			}
+
+			.icon.featured.white::before {
+				color: #000;
+			}
+
+			.icon.featured.alt2:after {
+				border-top-color: #edaa9f;
+			}
+			.icon.featured.alt2:before {
+				color: #ff3c23;
+			}
 
 /* Page Wrapper */
 

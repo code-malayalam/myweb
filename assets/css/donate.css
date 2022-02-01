@@ -1,0 +1,23 @@
+.my-page-wrapper {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    flex-direction: column;
+}
+.donate-page {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #CCE8F4 url(../../images/pic01.jpg);
+}
+
+.donate-page .button{
+    background-color: blue;
+    margin: 10px;
+    width: 100%;
+    max-width: 500px;
+}
