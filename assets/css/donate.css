@@ -7,6 +7,7 @@
 .donate-page {
     background-color: white;
     margin: 20px;
+    margin-bottom: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -16,8 +17,27 @@
 }
 
 .donate-page .button{
-    background-color: blue;
+    background-color: #2d5394;
     margin: 10px;
+    margin-bottom: 5px;
     width: 100%;
     max-width: 500px;
+}
+
+.label {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-top: 33px;
+    margin-bottom: 8px;
+    background: #680310;
+    padding: 7px 14px;
+    border-radius: 4px;
+}
+
+.divider {
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
 }
