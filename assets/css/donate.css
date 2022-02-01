@@ -25,7 +25,7 @@
 }
 
 .label {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: white;
     margin-top: 33px;
@@ -33,6 +33,7 @@
     background: #680310;
     padding: 7px 14px;
     border-radius: 4px;
+    text-align: center;
 }
 
 .divider {
@@ -40,4 +41,8 @@
     color: white;
     font-weight: 400;
     font-size: 30px;
+}
+
+#header {
+    margin-bottom: 0;
 }
