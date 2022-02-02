@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="assets/css/donate.css" />
 		<link rel="icon" type="image/png" href="images/logo.png"/>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload" style="display: none;">
 		<section id="header">
 
 			<!-- Logo -->
@@ -85,7 +85,7 @@
 				if(!tryFilled) {
 					window.location = "user.html";
 				} else {
-
+					document.body.style.display = 'block';
 					if(name || phone) {
 						document.getElementById('user-read').style.display = 'flex	';
 						document.getElementById('read-name').innerText = 'Name: ' + name;
@@ -103,8 +103,6 @@
 						document.getElementById('pay-c').href = payC;
 						document.getElementById('pay-d').href = payD;
 
-						//upi://pay?pa=codemalayalam@upi&pn=Code Malayalam&am=100&cu=INR
-
 					}
 					
 					if(mobileCheck()) {
@@ -112,7 +110,6 @@
 
 					}
 				}
-				// alert(mobileCheck());
 
 			</script>
 
