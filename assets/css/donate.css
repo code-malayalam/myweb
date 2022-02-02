@@ -108,7 +108,7 @@ input[type=number] {
 }
 
 
-#user-read div:last-child {
+#user-read #read-phone {
     font-size: 20px;
     font-weight: 500;
 }
