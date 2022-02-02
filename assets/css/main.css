@@ -104,7 +104,6 @@ a.playlist {
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2313,7 +2312,6 @@ a.playlist {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
 		padding: 4em 0 4em 0;
 	}
 
@@ -2330,7 +2328,6 @@ a.playlist {
 		}
 
 		#main .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
 		}
 
 /* Footer */
@@ -2680,7 +2677,6 @@ a.playlist {
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg02.png");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
