@@ -36,7 +36,13 @@
 
 		<!-- Scripts -->
 			<script>
-				
+
+				const name = localStorage.getItem('name') || '';
+				const phone = localStorage.getItem('phone') || '';
+
+				document.getElementById('name').value = name;
+				document.getElementById('phone').value = phone;
+
 				function skip(comp) {
 					localStorage.setItem('filled', 'true');
 					window.location = 'donate.html';
@@ -44,8 +50,6 @@
 				function ok(comp) {
 					const name = document.getElementById('name').value || '';
 					const phone = document.getElementById('phone').value || '';
-					console.log(name);
-					console.log(phone);
 					localStorage.setItem('name', name);
 					localStorage.setItem('phone', phone);
 					localStorage.setItem('filled', 'true');

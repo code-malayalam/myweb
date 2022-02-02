@@ -64,10 +64,6 @@ const main = () => {
                 }
             });
 
-            console.log(jsArr);
-            console.log(gitArr);
-            console.log(othersArr);
-
             const content = document.body
             content.classList.add('hide-loading');
 

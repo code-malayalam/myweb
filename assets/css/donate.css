@@ -37,9 +37,10 @@ input[type=number] {
 }
 
 .donate-page.user-read-input{
-    background: white;
+    background: white !important;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
 
 }
 
