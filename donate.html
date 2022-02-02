@@ -85,7 +85,7 @@
 					window.location = "user.html";
 				} else {
 					document.body.style.display = 'block';
-					const myName = 'ANOOP MAMBATTAKUNDIL';
+					const myName = 'ANOOP MAMBATTAKUNDIL SIVASANKARAN';
 					if(name || phone) {
 						document.getElementById('user-read').style.display = 'flex	';
 						document.getElementById('read-name').innerText = 'Name: ' + name;
@@ -93,7 +93,7 @@
 
 						const pn = name.trim().slice(0, 20) + '-' + phone.trim().slice(0, 10);
 
-						const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=100&cu=INR`;
+						const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=100&cu=INR&mc=&tr=1`;
 						const payB = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=300&cu=INR`;
 						const payC = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=500&cu=INR`;
 						const payD = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&cu=INR`;
