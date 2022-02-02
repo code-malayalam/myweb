@@ -113,3 +113,6 @@ input[type=number] {
     font-size: 20px;
     font-weight: 500;
 }
+#header {
+    padding: 1em 0 1em 0;
+}
