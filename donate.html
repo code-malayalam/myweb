@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="assets/css/donate.css" />
 		<link rel="icon" type="image/png" href="images/logo.png"/>
 	</head>
-	<body class="homepage is-preload" style="display: none;">
+	<body class="homepage is-preload">
 		<section id="header">
 
 			<!-- Logo -->
@@ -20,12 +20,9 @@
 		<div class="my-page-wrapper" id="donate-items">
 
 			<div class="donate-page user-input user-read-input" >
-				<div id="user-read" style="display: none;">
-					<div id="read-name"></div>
-					<div id="read-phone"></div>
-				</div>
-				<div class="button-group">
-					<div class="button ok-button" onclick="edit()">Edit your details</div>
+				<div id="user-read">
+					<div id="read-name"> You can send your donation to the upi id</div>
+					<div id="read-phone">codemalayalam@upi</div>
 				</div>
 			</div>
 
@@ -82,31 +79,31 @@
 				}
 
 				if(!tryFilled) {
-					window.location = "user.html";
+					// window.location = "user.html";
 				} else {
-					document.body.style.display = 'block';
-					const myName = 'ANOOP MAMBATTAKUNDIL SIVASANKARAN';
-					if(name || phone) {
-						document.getElementById('user-read').style.display = 'flex	';
-						document.getElementById('read-name').innerText = 'Name: ' + name;
-						document.getElementById('read-phone').innerText = 'Phone: '+ phone;
+					// document.body.style.display = 'block';
+					// const myName = 'Code Malayalam';
+					// if(name || phone) {
+					// 	document.getElementById('user-read').style.display = 'flex	';
+					// 	document.getElementById('read-name').innerText = 'Name: ' + name;
+					// 	document.getElementById('read-phone').innerText = 'Phone: '+ phone;
 
-						const pn = name.trim().slice(0, 20) + '-' + phone.trim().slice(0, 10);
+					// 	const pn = name.trim().slice(0, 20) + '-' + phone.trim().slice(0, 10);
 
-						const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=100&cu=INR&mc=&tr=1`;
-						const payB = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=300&cu=INR`;
-						const payC = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=500&cu=INR`;
-						const payD = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&cu=INR`;
+					// 	const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=100&cu=INR&mc=&tr=1`;
+					// 	const payB = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=300&cu=INR`;
+					// 	const payC = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=500&cu=INR`;
+					// 	const payD = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&cu=INR`;
 
-						document.getElementById('pay-a').href = payA;
-						document.getElementById('pay-b').href = payB;
-						document.getElementById('pay-c').href = payC;
-						document.getElementById('pay-d').href = payD;
+					// 	document.getElementById('pay-a').href = payA;
+					// 	document.getElementById('pay-b').href = payB;
+					// 	document.getElementById('pay-c').href = payC;
+					// 	document.getElementById('pay-d').href = payD;
 
-					}
+					// }
 					
 					if(mobileCheck()) {
-						document.getElementById('mobile-donate-items').style.display = 'flex';
+						// document.getElementById('mobile-donate-items').style.display = 'flex';
 
 					}
 				}
