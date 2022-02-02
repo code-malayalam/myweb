@@ -93,10 +93,10 @@
 
 						const pn = name.trim().slice(0, 20) + '-' + phone.trim().slice(0, 10);
 
-						const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}tn=${pn}&am=100&cu=INR`;
-						const payB = `upi://pay?pa=codemalayalam@upi&pn=${myName}tn=${pn}&am=300&cu=INR`;
-						const payC = `upi://pay?pa=codemalayalam@upi&pn=${myName}tn=${pn}&am=500&cu=INR`;
-						const payD = `upi://pay?pa=codemalayalam@upi&pn=${myName}tn=${pn}&cu=INR`;
+						const payA = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=100&cu=INR`;
+						const payB = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=300&cu=INR`;
+						const payC = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&am=500&cu=INR`;
+						const payD = `upi://pay?pa=codemalayalam@upi&pn=${myName}&tn=${pn}&cu=INR`;
 
 						document.getElementById('pay-a').href = payA;
 						document.getElementById('pay-b').href = payB;
